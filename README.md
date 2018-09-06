@@ -129,6 +129,8 @@ Or, for 2 documents *D*<sub>1</sub> and *D*<sub>2</sub> the average manhattan di
 
 I implemented this in David Robinson's widyr package and it can be called by using `pairwise_delta()`, similar to the other pairwise functions the package offers.
 
+Let's look at the closest (least distant, since delta is a distance measure) documents to the Op-Ed:
+
 ``` r
 deltas <- text_tokens %>%
   pairwise_delta(author, word, rel_freq)

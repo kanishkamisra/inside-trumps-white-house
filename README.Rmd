@@ -109,6 +109,7 @@ Or, for 2 documents $D_1$ and $D_2$ the average manhattan distance between the z
 
 I implemented this in David Robinson's widyr package and it can be called by using `pairwise_delta()`, similar to the other pairwise functions the package offers.
 
+Let's look at the closest (least distant, since delta is a distance measure) documents to the Op-Ed:
 
 ```{r}
 deltas <- text_tokens %>%
